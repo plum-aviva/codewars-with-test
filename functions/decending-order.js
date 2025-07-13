@@ -6,7 +6,7 @@ function descendingOrder(n) {
     for (let i = 0; i < numberAsString.length; i++) {
         numberArray.push(Number(numberAsString[i]));
     }
-    console.log(numberArray);
+
 
     for (let item of numberArray) {
         for (let i = 0; i < numberArray.length; i++) {
