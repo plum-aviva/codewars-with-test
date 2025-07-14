@@ -1,25 +1,30 @@
 function romanNumeralToNumber(romanNumeral) {
+    let romanNumaralArray = [];
+    let sum = 0;
+
+    for (let i = 0; i < romanNumeral.length; i++) {
+        romanNumaralArray.push(romanNumeral[i]);
+    }
+
     const map = [
         [1000, "M"],
-        [900, "CM"],
         [500, "D"],
-        [400, "CD"],
         [100, "C"],
-        [90, "XC"],
         [50, "L"],
-        [40, "XL"],
         [10, "X"],
-        [9, "IX"],
         [5, "V"],
-        [4, "IV"],
         [1, "I"],
     ];
 
-    for (const [value, numeral] of map) {
-        if (romanNumeral === numeral) {
-            return value;
+    for (let j = 0; j < romanNumaralArray.length; j++) {
+        for (const [value, numeral] of map) {
+            if (romanNumaralArray[j] === numeral) {
+                if (romanNumaralArray[j] >= romanNumaralArray[j + 1])
+                    sum = sum + value;
+            }
         }
     }
+    return sum;
 }
 
 
