@@ -67,8 +67,8 @@ describe("this function should identify a valid string - pattern of digits and d
 
 })
 
-// assert.strictEqual(isValidIP('256.1.2.3'      ), false);
-// assert.strictEqual(isValidIP('1.2.3.4.5'      ), false);
+
+
 // assert.strictEqual(isValidIP('123,45,67,89'   ), false);
 // assert.strictEqual(isValidIP('1e0.1e1.1e2.2e2'), false);
 // assert.strictEqual(isValidIP(' 1.2.3.4'       ), false);
