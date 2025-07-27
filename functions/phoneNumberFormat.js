@@ -8,12 +8,12 @@ function createPhoneNumber(numbers) {
         console.log(bracketsBit)
     }
 
-    for (let j = 3; j < 7; j++) {
+    for (let j = 3; j < 6; j++) {
         middleBit += numbers[j].toString()
         console.log(middleBit)
     }
 
-    for (let k = 7; k < numbers.length; k++) {
+    for (let k = 6; k < numbers.length; k++) {
         endBit += numbers[k].toString()
         console.log(endBit)
     }
@@ -23,10 +23,3 @@ function createPhoneNumber(numbers) {
 }
 
 export default createPhoneNumber
-
-console.log(createPhoneNumber([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
-
-
-numbers[0]
-numbers[1]
-numbers[2]
