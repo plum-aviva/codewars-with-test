@@ -1,13 +1,15 @@
-const url = "https://jsonplaceholder.typicode.com/todos/2"
+const url = `https://jsonplaceholder.typicode.com/todos/`
 
 
-const fetchToDo = async () => {
+const fetchToDo = async (number) => {
 
-    const response = await fetch(url)
+    const response = await fetch(`${url}${number}`)
     const data = await response.json()
     console.log(data);
     return data
 
 }
 
-fetchToDo()
+console.log(fetchToDo(7));
+
+export default fetchToDo
